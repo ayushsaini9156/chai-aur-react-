@@ -1,13 +1,12 @@
 import { useState } from 'react'
-
 import './App.css'
 
 function App() {
-  const [color, setColor] = useState('olive')
+  const [color, setColor] = useState("olive");
 
   return (
     <div
-      className="w-full h-screen duration-200"
+      className="fixed inset-0 w-full h-full transition-colors duration-200 ease-in-out"
       style={{ backgroundColor: color }}
     >
       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
