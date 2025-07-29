@@ -1,8 +1,9 @@
 import React from 'react'
-import { Container, Logo, LogoutBtn, logoutBtn } from '../index'
+import { Container, Logo, LogoutBtn } from '../index'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-export const Header = () => {
+import { Link } from 'react-router-dom'
+function Header(){
   const authStatus = useSelector((state)=> state.auth.status)
    const navigate = useNavigate()
    const navItems = [
@@ -66,3 +67,4 @@ export const Header = () => {
     </header>
   );
 }
+export default Header;
